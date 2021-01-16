@@ -18,7 +18,8 @@ public Integer myServer_port    = 10002;
 //public String  canalServer_ip   = "10.10.150.101"; //TODO REAL Address "10.10.150.101"
 public String  canalServer_ip   = "127.0.0.1"; //TODO REAL Address "10.10.150.101"
 public Integer canalServer_port = 1702;
-public String  apiServer_url    = "https://gundamapi.azurewebsites.net"; //TODO REAL URL https://gundamapi.azurewebsites.net
+//public String  apiServer_url    = "https://gundamapi.azurewebsites.net"; //TODO REAL URL https://gundamapi.azurewebsites.net
+public String  apiServer_url    = "https://gundamapim.azurewebsites.net"; //TODO REAL URL https://gundamapi.azurewebsites.net
 
 //Signal
 //TeamA: NeoZiong, TeamB: GUNDAM
@@ -249,7 +250,7 @@ void draw() {
         break;
         
       case StatusManager.STATUS_ATTACKING:
-        bgm.play();
+        //bgm.play();
         
         //Display Percent and Indicator
         {

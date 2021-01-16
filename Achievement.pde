@@ -68,14 +68,18 @@ public class Achievement {
     percent_a_previous = percent_a;
     percent_b_previous = percent_b;
     
+    if(score_a != 0) {
     //if(explosion_team_b == -1) {
       percent_a = score_a / (team_a_user_hash.size() * (battle_end - battle_start) * difficulty) * 100;
       if (percent_a > 100) percent_a = 100;
     //}
+    }
+    if(score_b != 0) {
     //if(explosion_team_a == -1) {
       percent_b = score_b / (team_b_user_hash.size() * (battle_end - battle_start) * difficulty) * 100;
       if (percent_b > 100) percent_b = 100;
     //}
+    }
     
     if (explosion_team_a == -1) {
       for (int i = fixed_attacks_percent; i < 100; i += fixed_attacks_percent) {
